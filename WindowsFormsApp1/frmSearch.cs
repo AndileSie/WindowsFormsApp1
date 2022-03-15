@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmMenu : Form
+    public partial class frmSearch : Form
     {
-        public frmMenu()
+        public frmSearch()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class frmMenu
+    partial class frmStudent
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmMenu
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 404);
-            this.Name = "frmMenu";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "frmStudent";
         }
 
         #endregion
     }
 }
-
