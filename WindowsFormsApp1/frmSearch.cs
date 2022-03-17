@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
         {
             frmMenu menu = new frmMenu();
             this.Hide();
-            menu.ShowDialog();
+            menu.Show();
         }
         //1000002
         private void txtStudent_TextChanged(object sender, EventArgs e)
