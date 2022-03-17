@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        int idNum;
+        int idNum = 1000001;
         private void frmStudent_Load(object sender, EventArgs e)
         {
             txtUserID.Enabled = false;
@@ -30,23 +30,32 @@ namespace WindowsFormsApp1
             lblYearOfStudy.Visible = false;
             cmbYearOfStudy.Visible = false;
             //starts here
-            double max = double.MinValue;
-            StreamReader reader = new StreamReader("Student.txt");
-            while (reader.EndOfStream == false)
+            try
             {
-                string[] line = reader.ReadLine().Split('#');
-                max = Math.Max(max, double.Parse(line[0]));
+                double max = double.MinValue;
+                StreamReader reader = new StreamReader("Student.txt");
+                while (reader.EndOfStream == false)
+                {
+                    string[] line = reader.ReadLine().Split('#');
+                    max = Math.Max(max, double.Parse(line[0]));
+                }
+                reader.Close();
+                reader = new StreamReader("Intern.txt");
+                while (reader.EndOfStream == false)
+                {
+                    string[] line = reader.ReadLine().Split('#');
+                    max = Math.Max(max, double.Parse(line[0]));
+                }
+                reader.Close();
+                idNum = (int)max + 1;
+                txtUserID.Text = idNum.ToString();
             }
-            reader.Close();
-            reader = new StreamReader("Intern.txt");
-            while (reader.EndOfStream == false)
+            catch 
             {
-                string[] line = reader.ReadLine().Split('#');
-                max = Math.Max(max, double.Parse(line[0]));
+                txtUserID.Text = idNum.ToString();
+
             }
-            reader.Close();
-            idNum = (int)max + 1;
-            txtUserID.Text = idNum.ToString();
+
             //ends here
         }
 

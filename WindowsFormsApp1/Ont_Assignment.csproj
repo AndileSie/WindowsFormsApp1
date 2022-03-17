@@ -58,11 +58,11 @@
     <Compile Include="frmFaultType.Designer.cs">
       <DependentUpon>frmFaultType.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFualt.cs">
+    <Compile Include="frmFault.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFualt.Designer.cs">
-      <DependentUpon>frmFualt.cs</DependentUpon>
+    <Compile Include="frmFault.Designer.cs">
+      <DependentUpon>frmFault.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSearch.cs">
       <SubType>Form</SubType>
@@ -84,8 +84,8 @@
     <EmbeddedResource Include="frmFaultType.resx">
       <DependentUpon>frmFaultType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFualt.resx">
-      <DependentUpon>frmFualt.cs</DependentUpon>
+    <EmbeddedResource Include="frmFault.resx">
+      <DependentUpon>frmFault.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearch.resx">
       <DependentUpon>frmSearch.cs</DependentUpon>

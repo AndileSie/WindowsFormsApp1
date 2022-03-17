@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmFualt fault = new frmFualt();
+            frmFault fault = new frmFault();
             fault.Show();
             this.Hide();
 
