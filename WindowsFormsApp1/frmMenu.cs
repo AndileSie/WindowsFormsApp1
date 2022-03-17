@@ -17,9 +17,9 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void btnstudent_Click(object sender, EventArgs e)
+        private void frmMenu_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

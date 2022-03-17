@@ -17,11 +17,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        int idNum = 1000001;
+        int idNum;
         private void frmStudent_Load(object sender, EventArgs e)
         {
             txtUserID.Enabled = false;
-            txtUserID.Text = idNum.ToString();
+            //txtUserID.Text = idNum.ToString();
             cmbRole.Items.Add("Student");
             cmbRole.Items.Add("Intern");
             cmbYearOfStudy.Items.Add("First Year");
@@ -29,6 +29,25 @@ namespace WindowsFormsApp1
             cmbYearOfStudy.Items.Add("Third Year");
             lblYearOfStudy.Visible = false;
             cmbYearOfStudy.Visible = false;
+            //starts here
+            double max = double.MinValue;
+            StreamReader reader = new StreamReader("Student.txt");
+            while (reader.EndOfStream == false)
+            {
+                string[] line = reader.ReadLine().Split('#');
+                max = Math.Max(max, double.Parse(line[0]));
+            }
+            reader.Close();
+            reader = new StreamReader("Intern.txt");
+            while (reader.EndOfStream == false)
+            {
+                string[] line = reader.ReadLine().Split('#');
+                max = Math.Max(max, double.Parse(line[0]));
+            }
+            reader.Close();
+            idNum = (int)max + 1;
+            txtUserID.Text = idNum.ToString();
+            //ends here
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -67,6 +86,7 @@ namespace WindowsFormsApp1
 
         private void btnList_Click(object sender, EventArgs e)
         {
+            lstDisplayItems.Items.Clear();
             lstDisplayItems.Items.Add("User ID" + "\t" + "User Name" + "\t" + "User Surname" + "\t" + "Date of Birth" + "\t\t" + "Role" + "\t" + "Year of Study");
 
             StreamReader student = new StreamReader("Student.txt");
