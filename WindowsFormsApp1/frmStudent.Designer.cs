@@ -144,9 +144,11 @@
             // 
             // dtpDOB
             // 
+            this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDOB.Location = new System.Drawing.Point(187, 146);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(199, 26);
+            this.dtpDOB.Size = new System.Drawing.Size(199, 23);
             this.dtpDOB.TabIndex = 8;
             // 
             // txtSurname
