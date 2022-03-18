@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -42,32 +42,31 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            frmFault fault = new frmFault();
-            fault.Show();
-            this.Hide();
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnStudents_Click(object sender, EventArgs e)
         {
             frmStudent frn = new frmStudent();
             frn.Show();
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnFault_Click(object sender, EventArgs e)
         {
-            frmFaultType fault = new frmFaultType();
+            frmFault fault = new frmFault();
             fault.Show();
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnFaultType_Click(object sender, EventArgs e)
         {
-            frmSearch fault = new frmSearch();
-            fault.Show();
+            frmFaultType faultype = new frmFaultType();
+            faultype.Show();
+            this.Hide();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            frmSearch search = new frmSearch();
+            search.Show();
             this.Hide();
         }
     }

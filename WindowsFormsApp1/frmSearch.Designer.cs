@@ -35,7 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnStudent = new System.Windows.Forms.Button();
             this.txtStudent = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,7 +43,7 @@
             this.txtFaultType = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFault = new System.Windows.Forms.Button();
             this.txtFault = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -122,7 +122,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.btnStudent);
             this.panel4.Controls.Add(this.txtStudent);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(14, 92);
@@ -130,15 +130,16 @@
             this.panel4.Size = new System.Drawing.Size(385, 58);
             this.panel4.TabIndex = 4;
             // 
-            // button3
+            // btnStudent
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(284, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 28);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Search";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnStudent.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudent.Location = new System.Drawing.Point(284, 14);
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Size = new System.Drawing.Size(96, 28);
+            this.btnStudent.TabIndex = 2;
+            this.btnStudent.Text = "Search";
+            this.btnStudent.UseVisualStyleBackColor = true;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
             // 
             // txtStudent
             // 
@@ -179,6 +180,7 @@
             this.btnFaultType.TabIndex = 4;
             this.btnFaultType.Text = "Search";
             this.btnFaultType.UseVisualStyleBackColor = true;
+            this.btnFaultType.Click += new System.EventHandler(this.btnFaultType_Click);
             // 
             // txtFaultType
             // 
@@ -187,6 +189,7 @@
             this.txtFaultType.Name = "txtFaultType";
             this.txtFaultType.Size = new System.Drawing.Size(208, 28);
             this.txtFaultType.TabIndex = 6;
+            this.txtFaultType.TextChanged += new System.EventHandler(this.txtFaultType_TextChanged);
             // 
             // label2
             // 
@@ -201,7 +204,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnFault);
             this.panel2.Controls.Add(this.txtFault);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(14, 13);
@@ -209,15 +212,16 @@
             this.panel2.Size = new System.Drawing.Size(385, 58);
             this.panel2.TabIndex = 0;
             // 
-            // button1
+            // btnFault
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(284, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnFault.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFault.Location = new System.Drawing.Point(284, 14);
+            this.btnFault.Name = "btnFault";
+            this.btnFault.Size = new System.Drawing.Size(96, 28);
+            this.btnFault.TabIndex = 2;
+            this.btnFault.Text = "Search";
+            this.btnFault.UseVisualStyleBackColor = true;
+            this.btnFault.Click += new System.EventHandler(this.btnFault_Click);
             // 
             // txtFault
             // 
@@ -226,6 +230,7 @@
             this.txtFault.Name = "txtFault";
             this.txtFault.Size = new System.Drawing.Size(208, 28);
             this.txtFault.TabIndex = 3;
+            this.txtFault.TextChanged += new System.EventHandler(this.txtFault_TextChanged);
             // 
             // label1
             // 
@@ -269,7 +274,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnStudent;
         private System.Windows.Forms.TextBox txtStudent;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
@@ -277,7 +282,7 @@
         private System.Windows.Forms.TextBox txtFaultType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFault;
         private System.Windows.Forms.TextBox txtFault;
         private System.Windows.Forms.Label label1;
     }

@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnFaultType = new System.Windows.Forms.Button();
+            this.btnFault = new System.Windows.Forms.Button();
+            this.btnStudents = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,10 +51,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnSearch);
+            this.groupBox1.Controls.Add(this.btnFaultType);
+            this.groupBox1.Controls.Add(this.btnFault);
+            this.groupBox1.Controls.Add(this.btnStudents);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
@@ -72,46 +72,49 @@
             this.groupBox1.Text = "Info@IT Management Application";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button4
+            // btnSearch
             // 
-            this.button4.Location = new System.Drawing.Point(719, 369);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(219, 77);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Search Faults";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(733, 382);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(195, 64);
+            this.btnSearch.TabIndex = 12;
+            this.btnSearch.Text = "Search Faults";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // button3
+            // btnFaultType
             // 
-            this.button3.Location = new System.Drawing.Point(482, 369);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 77);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Manage Fault Type ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnFaultType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFaultType.Location = new System.Drawing.Point(497, 382);
+            this.btnFaultType.Name = "btnFaultType";
+            this.btnFaultType.Size = new System.Drawing.Size(195, 64);
+            this.btnFaultType.TabIndex = 11;
+            this.btnFaultType.Text = "Manage Fault Type ";
+            this.btnFaultType.UseVisualStyleBackColor = true;
+            this.btnFaultType.Click += new System.EventHandler(this.btnFaultType_Click);
             // 
-            // button2
+            // btnFault
             // 
-            this.button2.Location = new System.Drawing.Point(247, 369);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(214, 77);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Manage Faults";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnFault.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFault.Location = new System.Drawing.Point(257, 382);
+            this.btnFault.Name = "btnFault";
+            this.btnFault.Size = new System.Drawing.Size(195, 64);
+            this.btnFault.TabIndex = 10;
+            this.btnFault.Text = "Manage Faults";
+            this.btnFault.UseVisualStyleBackColor = true;
+            this.btnFault.Click += new System.EventHandler(this.btnFault_Click);
             // 
-            // button1
+            // btnStudents
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 369);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 77);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Manage Users";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudents.Location = new System.Drawing.Point(18, 382);
+            this.btnStudents.Name = "btnStudents";
+            this.btnStudents.Size = new System.Drawing.Size(195, 64);
+            this.btnStudents.TabIndex = 9;
+            this.btnStudents.Text = "Manage Users";
+            this.btnStudents.UseVisualStyleBackColor = true;
+            this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
             // label3
             // 
@@ -230,10 +233,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnFaultType;
+        private System.Windows.Forms.Button btnFault;
+        private System.Windows.Forms.Button btnStudents;
     }
 }
 

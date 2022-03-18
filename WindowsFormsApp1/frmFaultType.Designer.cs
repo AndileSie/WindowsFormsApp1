@@ -28,20 +28,131 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lstFaults = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnGoBack = new System.Windows.Forms.Button();
+            this.btnList = new System.Windows.Forms.Button();
+            this.txtFaultDesc = new System.Windows.Forms.TextBox();
+            this.txtFaultId = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // lstFaults
+            // 
+            this.lstFaults.FormattingEnabled = true;
+            this.lstFaults.Location = new System.Drawing.Point(10, 143);
+            this.lstFaults.Name = "lstFaults";
+            this.lstFaults.Size = new System.Drawing.Size(345, 160);
+            this.lstFaults.TabIndex = 2;
+            this.lstFaults.SelectedIndexChanged += new System.EventHandler(this.lstFaults_SelectedIndexChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnGoBack);
+            this.groupBox1.Controls.Add(this.btnList);
+            this.groupBox1.Controls.Add(this.txtFaultDesc);
+            this.groupBox1.Controls.Add(this.txtFaultId);
+            this.groupBox1.Controls.Add(this.btnAdd);
+            this.groupBox1.Controls.Add(this.lstFaults);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(512, 353);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Fault Type Information";
+            // 
+            // btnGoBack
+            // 
+            this.btnGoBack.Location = new System.Drawing.Point(371, 136);
+            this.btnGoBack.Name = "btnGoBack";
+            this.btnGoBack.Size = new System.Drawing.Size(75, 23);
+            this.btnGoBack.TabIndex = 7;
+            this.btnGoBack.Text = "Go Back";
+            this.btnGoBack.UseVisualStyleBackColor = true;
+            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
+            // 
+            // btnList
+            // 
+            this.btnList.Location = new System.Drawing.Point(372, 83);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(75, 23);
+            this.btnList.TabIndex = 6;
+            this.btnList.Text = "List";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
+            // 
+            // txtFaultDesc
+            // 
+            this.txtFaultDesc.Location = new System.Drawing.Point(137, 87);
+            this.txtFaultDesc.Name = "txtFaultDesc";
+            this.txtFaultDesc.Size = new System.Drawing.Size(217, 20);
+            this.txtFaultDesc.TabIndex = 5;
+            // 
+            // txtFaultId
+            // 
+            this.txtFaultId.Location = new System.Drawing.Point(137, 45);
+            this.txtFaultId.Name = "txtFaultId";
+            this.txtFaultId.Size = new System.Drawing.Size(218, 20);
+            this.txtFaultId.TabIndex = 4;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(372, 45);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Fault Type Desc:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fault Type ID:";
             // 
             // frmFaultType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(544, 387);
+            this.Controls.Add(this.groupBox1);
             this.Name = "frmFaultType";
             this.Text = "frmFaultType";
             this.Load += new System.EventHandler(this.frmFaultType_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox lstFaults;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnGoBack;
+        private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.TextBox txtFaultDesc;
+        private System.Windows.Forms.TextBox txtFaultId;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
